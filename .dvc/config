@@ -1,0 +1,8 @@
+[core]
+    remote = s3remote
+['remote "s3remote"']
+    url = s3://ml-pipeline-dvc-cache
+    endpointurl = http://localhost:4566
+    access_key_id = test
+    secret_access_key = test
+    region = us-east-1

@@ -1,0 +1,22 @@
+columns:
+  - Time_spent_Alone: float
+  - Stage_fear: bool
+  - Social_event_attendance: float
+  - Going_outside: float
+  - Drained_after_socializing: bool
+  - Friends_circle_size: float
+  - Post_frequency: float
+  - Personality: category
+
+numerical_columns:
+  - Time_spent_Alone
+  - Social_event_attendance
+  - Going_outside
+  - Friends_circle_size
+  - Post_frequency
+
+categorical_columns:
+  - Stage_fear
+  - Drained_after_socializing
+
+target_column: Personality

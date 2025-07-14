@@ -1,0 +1,16 @@
+stages:
+  data_ingestion:
+    cmd: python src/components/data_ingestion.py
+    deps:
+      - src/components/data_ingestion.py
+      - config/schema.yaml
+    outs:
+      - artifact/latest/data_ingestion/data_file.csv
+
+  data_validation:
+    cmd: python src/components/data_validation.py
+    deps:
+      - src/components/data_validation.py
+      - artifact/latest/data_ingestion/data_file.csv
+    outs:
+      - artifact/latest/data_validation/validation_report.json
